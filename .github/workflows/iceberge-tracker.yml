@@ -20,6 +20,8 @@ jobs:
 
     - name: Create local changes
       run: |
+        pip install wheel
+        pip install requests
         pip install bs4
         python iceberg.py
     - name: Commit files
