@@ -51,7 +51,7 @@ def read_current_iceberg_location():
     """
     Reads the webpage and remove unwanted tags
     """
-    scp_byu_html = requests.get("https://www.scp.byu.edu/current_icebergs.html", verify=False)
+    scp_byu_html = requests.get("https://www.scp.byu.edu/current_icebergs.html")
 
     soup = BeautifulSoup(scp_byu_html.content, 'lxml')
 
