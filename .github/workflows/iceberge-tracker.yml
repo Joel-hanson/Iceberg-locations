@@ -35,7 +35,7 @@ jobs:
         git config --local user.name "github-actions[bot]"
 
         date=$(date '+%Y-%m-%d %H:%M:%S')
-        git commit -m \"$date\" -a
+        git commit -m "generated files on `date +'%Y-%m-%d %H:%M:%S'`" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
