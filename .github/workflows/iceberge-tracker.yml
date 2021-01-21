@@ -22,7 +22,9 @@ jobs:
       run: |
         pip install wheel
         pip install requests
+        pip install lxml
         pip install bs4
+        
         python iceberg.py
     - name: Commit files
       run: |
