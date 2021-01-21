@@ -17,7 +17,8 @@ jobs:
 
     - name: Create local changes
       run: |
-        python iceberg.py
+        pip install bs4
+        python3 iceberg.py
     - name: Commit files
       run: |
         git config --local user.email "joelhanson025@gmail.com"
