@@ -1,9 +1,12 @@
-jobs:
-  on:
+name: The iceberg data collection
+
+on:
   push:
     branches:
       - main
       - try
+
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
