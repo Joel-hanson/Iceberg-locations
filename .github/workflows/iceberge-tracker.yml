@@ -17,7 +17,7 @@ jobs:
 
     - name: Create local changes
       run: |
-        pip install bs4
+        pip3 install bs4
         python3 iceberg.py
     - name: Commit files
       run: |
