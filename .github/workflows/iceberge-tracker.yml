@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python_version: [3.6.10]
     steps:
     - uses: actions/checkout@v2
       with:
@@ -17,8 +20,8 @@ jobs:
 
     - name: Create local changes
       run: |
-        pip3 install bs4
-        python3 iceberg.py
+        pip install bs4
+        python iceberg.py
     - name: Commit files
       run: |
         git config --local user.email "joelhanson025@gmail.com"
