@@ -5,6 +5,9 @@ on:
     branches:
       - main
       - try
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 1 * * *'
 
 jobs:
   build:
@@ -32,7 +35,7 @@ jobs:
         git config --local user.name "github-actions[bot]"
 
         date=$(date '+%Y-%m-%d %H:%M:%S')
-        git commit -m $date -a
+        git commit -m \"$date\" -a
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
