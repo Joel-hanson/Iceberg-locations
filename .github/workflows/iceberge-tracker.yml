@@ -34,8 +34,12 @@ jobs:
         git config --local user.email "joelhanson025@gmail.com"
         git config --local user.name "github-actions[bot]"
 
-        date=$(date '+%Y-%m-%d %H:%M:%S')
-        git commit -m "generated files on `date +'%Y-%m-%d %H:%M:%S'`" -a
+        if [ -n "$(git status --porcelain)" ]; then
+          date=$(date '+%Y-%m-%d %H:%M:%S')
+          git commit -m "generated files on `date +'%Y-%m-%d %H:%M:%S'`" -a
+        else
+          echo "no changes detected";
+        fi
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
