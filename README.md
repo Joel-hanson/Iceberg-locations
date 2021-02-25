@@ -3,7 +3,7 @@
 [![The iceberg data collection](https://github.com/Joel-hanson/Iceberg-locations/actions/workflows/iceberge-tracker.yml/badge.svg?branch=main)](https://github.com/Joel-hanson/Iceberg-locations/actions/workflows/iceberge-tracker.yml)
 
 <p align="center">
-  <img src="./assets/composite2.gif">
+  <img src="./assets/composite2.gif" height="400px">
 </p>
 Antarctic large iceberg positions derived from ASCAT and OSCAT-2
 
