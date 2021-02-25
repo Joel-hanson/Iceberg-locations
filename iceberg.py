@@ -80,13 +80,18 @@ def get_iceberg_details(location_data, revised_date):
     for index, row in enumerate(location_data):
         if index == 0:
             continue
+
+        observation_date = 0
+        if len(row) >= 4:
+            observation_date = int(row[3])
+
         result.append({
             "iceberg": row[0],
             "dms_longitude": row[1],
             "dms_lattitude": row[2],
             "longitude": dms2dec(row[1]),
             "lattitude": dms2dec(row[2]),
-            "recent_observation": get_update_datetime(int(row[3]), revised_date),
+            "recent_observation": get_update_datetime(observation_date, revised_date),
         })
     return result
 
