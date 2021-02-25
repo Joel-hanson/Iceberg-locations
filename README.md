@@ -1,5 +1,7 @@
 # Iceberg Locations
 
+[![The iceberg data collection](https://github.com/Joel-hanson/Iceberg-locations/actions/workflows/iceberge-tracker.yml/badge.svg?branch=main)](https://github.com/Joel-hanson/Iceberg-locations/actions/workflows/iceberge-tracker.yml)
+
 <p align="center">
   <img src="./assets/composite2.gif">
 </p>
@@ -9,7 +11,9 @@ _All data collected here are from the NASA SCP website_
 
 ## Overview
 
-This a project which automatically scrapes data from https://www.scp.byu.edu/current_icebergs.html to get the current location of all the large iceberg in Antarctic, The position is derived from ASCAT and OSCAT-2. The json `iceberg_location.json` contains all the information collected from the page. This json is typically updated once or twice a week(as per the updates in website), typically on Mondays and possibly Fridays. Positions reported here are extracted from near real-time ASCAT and OSCAT-2 data in tandem. Positions reported in the full iceberg database are generated from science data and have been more accurately tracked. The full database is updated only a few times per year which can be accessed from https://www.scp.byu.edu/data/iceberg/database1.html.
+This a project which automatically scrapes data from https://www.scp.byu.edu/current_icebergs.html to get the current location of all the large iceberg in the Antarctic, The position is derived from ASCAT and OSCAT-2. The json `iceberg_location.json` contains all the information collected from the page. This JSON is typically updated once or twice a week(as per the updates on the website), typically on Mondays and possibly Fridays. Positions reported here are extracted from near real-time ASCAT and OSCAT-2 data in tandem. Positions reported in the full iceberg database are generated from science data and have been more accurately tracked. The full database is updated only a few times per year which can be accessed from https://www.scp.byu.edu/data/iceberg/database1.html.
+
+> The scheduled task of scraping the website runs every day.
 
 ## Requirements
 
@@ -27,7 +31,7 @@ Step 2: Make migration for the models
 
 `python iceberg.py`
 
-Step 3: Goto the link `iceberg_location.json` to see the latest position details of the iceberg.
+Step 3: Go to the link `iceberg_location.json` to see the latest position details of the iceberg.
 
 ## JSON Schema
 
@@ -113,4 +117,4 @@ The file `iceberg_location.json` is structured in the format
         ................
 ```
 
-_OSCAT-2 - Operational users please note: This list cannot possibly contain all potentially hazardous icebergs in Antarctic waters -- Scatterometers such as ASCAT and OSCAT-2 were designed for measuring ocean winds, not icebergs. Scatterometer data is useful for tracking icebergs, but is limited. During the Austral summer contrast between ocean and melting icebergs is reduced, which can result in gaps in visibility. Futher, as the SCP team is not an operational agency, errors are expected and we cannot be held responsible for omissions or errors in this database. Also note that the large icebergs tracked here tend to shed smaller iceberg fragments which are serious navigation hazards in nearby areas. Fragments (large and small) can drift substantial distances from their origins._
+_OSCAT-2 - Operational users please note: This list cannot possibly contain all potentially hazardous icebergs in Antarctic waters -- Scatterometers such as ASCAT and OSCAT-2 were designed for measuring ocean winds, not icebergs. Scatterometer data is useful for tracking icebergs but is limited. During the Austral summer contrast between ocean and melting icebergs is reduced, which can result in gaps invisibility. Further, as the SCP team is not an operational agency, errors are expected and we cannot be held responsible for omissions or errors in this database. Also, note that the large icebergs tracked here tend to shed smaller iceberg fragments which are serious navigation hazards in nearby areas. Fragments (large and small) can drift substantial distances from their origins._
