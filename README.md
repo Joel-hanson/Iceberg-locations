@@ -5,9 +5,8 @@
 <p align="center">
   <img src="./assets/composite2.gif" height="400px">
 </p>
-Antarctic large iceberg positions derived from ASCAT and OSCAT-2
 
-_All data collected here are from the NASA SCP website_
+> Antarctic large iceberg positions derived from ASCAT and OSCAT-2. All data collected here are from the NASA SCP website
 
 ## Overview
 
