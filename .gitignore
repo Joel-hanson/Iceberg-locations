@@ -3,6 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Project specific files
+data/*.json
+output/*.html
+src/__pycache__/
+
 # C extensions
 *.so
 
