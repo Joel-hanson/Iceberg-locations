@@ -75,6 +75,10 @@ animations:
 	python main.py animations
 	@echo "Animation URLs displayed"
 
+	@echo "Generating interactive map..."
+	python main.py map
+	@echo "Map generated"
+
 # Docker operations
 docker:
 	@echo "Building Docker container..."

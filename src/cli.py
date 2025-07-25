@@ -115,7 +115,6 @@ def show_info():
         print(f"Error reading data: {e}")
         return False
 
-
 def get_animation_url(iceberg_name):
     """Get the animation URL for a specific iceberg."""
     from config import get_config
@@ -183,7 +182,6 @@ def show_animations():
     except Exception as e:
         print(f"Error reading data: {e}")
         return False
-
 
 def generate_map():
     """Generate a simple interactive map."""
@@ -434,7 +432,7 @@ def generate_map():
             width: 16px;
             color: hsl(var(--muted-foreground));
         }
-        
+
         .animation-btn {
             background: hsl(var(--primary));
             border: 1px solid hsl(var(--primary));
@@ -478,7 +476,7 @@ def generate_map():
             gap: 0.375rem;
             cursor: not-allowed;
         }
-        
+
         .badge {
             display: inline-flex;
             align-items: center;
@@ -687,7 +685,7 @@ def generate_map():
         let icebergData = [];
         let markersGroup = L.layerGroup().addTo(map);
         let clustersEnabled = true;
-        
+
         // Available animations (from NASA SCP FTP directory)
         const availableAnimations = [
             'a23a', 'a56', 'a57', 'a61', 'a62', 'a62a', 'a63', 'a64',
@@ -701,7 +699,7 @@ def generate_map():
             'uk052', 'uk093', 'uk174', 'uk192', 'uk290', 'uk304', 'uk314', 'uk316',
             'uk318', 'uk319', 'uk320', 'uk321', 'uk321b', 'uk322'
         ];
-        
+
         // Utility functions
         function getIcebergColor(iceberg) {
             const name = iceberg.iceberg.toLowerCase();
