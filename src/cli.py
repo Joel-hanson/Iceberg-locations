@@ -855,7 +855,7 @@ def generate_map():
                         if (summaryResponse.ok && latestResponse.ok) {
                             summaryData = await summaryResponse.json();
                             latestData = await latestResponse.json();
-                            console.log('✅ API data loaded successfully');
+                            console.log('API data loaded successfully');
                         } else {
                             throw new Error('API endpoints not available');
                         }
@@ -863,8 +863,7 @@ def generate_map():
                         throw new Error('Local environment - using fallback');
                     }
                 } catch (apiError) {
-                    console.log('⚠️ API not available, using local fallback...', apiError.message);
-                    
+                    console.warn('API not available, using local fallback...', apiError.message);
                     // Fallback: Load from local data file
                     const response = await fetch('../data/iceberg_location.json');
                     const data = await response.json();

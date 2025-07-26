@@ -20,7 +20,22 @@ def create_api_endpoints():
 
     # 1. Latest data endpoint (most recent date)
     if iceberg_data:
-        latest_date = max(iceberg_data.keys())
+        # Sort dates properly by parsing them as dates, not strings
+        dates = list(iceberg_data.keys())
+        try:
+            dates_with_dt = []
+            for date_str in dates:
+                month, day, year = date_str.split('/')
+                dt = datetime(2000 + int(year), int(month), int(day))
+                dates_with_dt.append((date_str, dt))
+            
+            # Sort by actual datetime and get the latest
+            dates_with_dt.sort(key=lambda x: x[1])
+            latest_date = dates_with_dt[-1][0]  # Most recent date string
+        except:
+            # Fallback to string sorting if date parsing fails
+            latest_date = max(iceberg_data.keys())
+            
         latest_data = {
             "last_updated": latest_date,
             "total_icebergs": len(iceberg_data[latest_date]),
@@ -37,14 +52,31 @@ def create_api_endpoints():
         for record in records:
             unique_icebergs.add(record.get("iceberg", ""))
 
+    # Properly sort dates for earliest/latest
+    try:
+        dates = list(iceberg_data.keys())
+        dates_with_dt = []
+        for date_str in dates:
+            month, day, year = date_str.split('/')
+            dt = datetime(2000 + int(year), int(month), int(day))
+            dates_with_dt.append((date_str, dt))
+        
+        dates_with_dt.sort(key=lambda x: x[1])
+        earliest_date = dates_with_dt[0][0]   # Earliest date string
+        latest_date = dates_with_dt[-1][0]    # Most recent date string
+    except:
+        # Fallback to string sorting if date parsing fails
+        earliest_date = min(iceberg_data.keys()) if iceberg_data else None
+        latest_date = max(iceberg_data.keys()) if iceberg_data else None
+
     summary = {
         "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC"),
         "total_observation_dates": len(iceberg_data),
         "total_records": total_records,
         "unique_icebergs": len(unique_icebergs),
         "date_range": {
-            "earliest": min(iceberg_data.keys()) if iceberg_data else None,
-            "latest": max(iceberg_data.keys()) if iceberg_data else None,
+            "earliest": earliest_date,
+            "latest": latest_date,
         },
         "sample_icebergs": list(unique_icebergs)[:10],  # First 10 for preview
     }
