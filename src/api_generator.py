@@ -25,17 +25,17 @@ def create_api_endpoints():
         try:
             dates_with_dt = []
             for date_str in dates:
-                month, day, year = date_str.split('/')
+                month, day, year = date_str.split("/")
                 dt = datetime(2000 + int(year), int(month), int(day))
                 dates_with_dt.append((date_str, dt))
-            
+
             # Sort by actual datetime and get the latest
             dates_with_dt.sort(key=lambda x: x[1])
             latest_date = dates_with_dt[-1][0]  # Most recent date string
         except:
             # Fallback to string sorting if date parsing fails
             latest_date = max(iceberg_data.keys())
-            
+
         latest_data = {
             "last_updated": latest_date,
             "total_icebergs": len(iceberg_data[latest_date]),
@@ -57,13 +57,13 @@ def create_api_endpoints():
         dates = list(iceberg_data.keys())
         dates_with_dt = []
         for date_str in dates:
-            month, day, year = date_str.split('/')
+            month, day, year = date_str.split("/")
             dt = datetime(2000 + int(year), int(month), int(day))
             dates_with_dt.append((date_str, dt))
-        
+
         dates_with_dt.sort(key=lambda x: x[1])
-        earliest_date = dates_with_dt[0][0]   # Earliest date string
-        latest_date = dates_with_dt[-1][0]    # Most recent date string
+        earliest_date = dates_with_dt[0][0]  # Earliest date string
+        latest_date = dates_with_dt[-1][0]  # Most recent date string
     except:
         # Fallback to string sorting if date parsing fails
         earliest_date = min(iceberg_data.keys()) if iceberg_data else None

@@ -164,28 +164,6 @@ The animation files show historical movement patterns of icebergs over time, pro
 }
 ```
 
-## Deployment to GitHub Pages
-
-This project supports automatic deployment to GitHub Pages for a live, publicly accessible website.
-
-### Quick Setup
-
-1. **Enable GitHub Pages**: Go to repository Settings → Pages → Source: "GitHub Actions"
-2. **Automatic Deployment**: The workflow runs daily and deploys updates automatically
-3. **Manual Deployment**: Use the "Deploy to GitHub Pages" workflow in the Actions tab
-
-Your site will be available at: `https://joel-hanson.github.io/Iceberg-locations/`
-
-### Features of the Deployed Site
-
-- **Real-time Updates**: Automatically refreshed daily at 6:00 AM UTC
-- **Interactive Map**: Full-featured map with clickable iceberg markers
-- **Movement Animations**: Direct links to NASA animation GIFs in popups
-- **Mobile Responsive**: Works perfectly on all devices
-- **Professional Design**: Clean, modern interface with Bootstrap
-
-For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
-
 ## Development
 
 ### Local Development Server
@@ -198,11 +176,11 @@ cd /Users/joelhanson/Desktop/Personal/Iceberg-locations
 python main.py map
 
 # Start a simple HTTP server
-
 python -m http.server 8000
-http://localhost:8000/output/iceberg_map.html
+
+# Visit: http://localhost:8000/output/iceberg_map.html
+```
 
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
-```
