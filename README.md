@@ -170,7 +170,7 @@ The animation files show historical movement patterns of icebergs over time, pro
 
 ```bash
 # Navigate to your project root
-cd /Users/joelhanson/Desktop/Personal/Iceberg-locations
+cd /path/to/Iceberg-locations
 
 # Generate the map first
 python main.py map

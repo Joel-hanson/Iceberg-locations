@@ -180,12 +180,33 @@ def save_data_as_file(location_details, revised_date):
     print(f"Data saved successfully to {data_file}")
 
 
-print("Starting iceberg data collection...")
-current_location_data, revised_date = read_current_iceberg_location()
+def collect_iceberg_data():
+    """Main function to collect and save iceberg data.
 
-if revised_date and current_location_data:
-    detailed_location_details = get_iceberg_details(current_location_data, revised_date)
-    save_data_as_file(detailed_location_details, revised_date)
-    print(f"Collection complete! Found {len(detailed_location_details)} icebergs")
-else:
-    print("Failed to collect iceberg data")
+    Returns:
+        bool: True if successful, False otherwise
+    """
+    print("Starting iceberg data collection...")
+    try:
+        current_location_data, revised_date = read_current_iceberg_location()
+
+        if revised_date and current_location_data:
+            detailed_location_details = get_iceberg_details(
+                current_location_data, revised_date
+            )
+            save_data_as_file(detailed_location_details, revised_date)
+            print(
+                f"Collection complete! Found {len(detailed_location_details)} icebergs"
+            )
+            return True
+        else:
+            print("Failed to collect iceberg data")
+            return False
+    except Exception as e:
+        print(f"Error during data collection: {e}")
+        return False
+
+
+if __name__ == "__main__":
+    # Only run when called as a script, not when imported
+    collect_iceberg_data()
