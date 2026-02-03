@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-02 06:19:39 UTC",
+  "generated_at": "2026-02-03 06:14:26 UTC",
   "total_observation_dates": 37,
   "total_records": 1832,
   "unique_icebergs": 97,
@@ -8,15 +8,15 @@
     "latest": "07/02/25"
   },
   "sample_icebergs": [
-    "a64",
-    "uk125",
     "a76f",
-    "a68l",
-    "b22g",
-    "a75",
+    "a71",
+    "a80d",
+    "c33",
+    "a72",
+    "a76k",
     "a77",
-    "c29",
-    "b37",
-    "a69c"
+    "a78",
+    "a69b",
+    "b50"
   ]
 }
