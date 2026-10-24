@@ -25184,5 +25184,319 @@
       "lattitude": -6657.0,
       "recent_observation": "10/14/26"
     }
+  ],
+  "10/23/26": [
+    {
+      "iceberg": "a76c",
+      "dms_longitude": "23 56'W",
+      "dms_lattitude": "56 45'S",
+      "longitude": -2356.0,
+      "lattitude": -5645.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "a81",
+      "dms_longitude": "38 20'W",
+      "dms_lattitude": "54 52'S",
+      "longitude": -3820.0,
+      "lattitude": -5452.0,
+      "recent_observation": "10/19/26"
+    },
+    {
+      "iceberg": "a83",
+      "dms_longitude": "49 34'W",
+      "dms_lattitude": "59 58'S",
+      "longitude": -4934.0,
+      "lattitude": -5958.0,
+      "recent_observation": "10/17/26"
+    },
+    {
+      "iceberg": "a84",
+      "dms_longitude": "93 7'W",
+      "dms_lattitude": "69 50'S",
+      "longitude": -937.0,
+      "lattitude": -6950.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "a85",
+      "dms_longitude": "50 54'W",
+      "dms_lattitude": "58 45'S",
+      "longitude": -5054.0,
+      "lattitude": -5845.0,
+      "recent_observation": "10/07/26"
+    },
+    {
+      "iceberg": "b09b",
+      "dms_longitude": "143 10'E",
+      "dms_lattitude": "66 3'S",
+      "longitude": 14310.0,
+      "lattitude": -663.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "b09g",
+      "dms_longitude": "42 29'E",
+      "dms_lattitude": "67 26'S",
+      "longitude": 4229.0,
+      "lattitude": -6726.0,
+      "recent_observation": "10/14/26"
+    },
+    {
+      "iceberg": "b22a",
+      "dms_longitude": "164 7'E",
+      "dms_lattitude": "69 39'S",
+      "longitude": 1647.0,
+      "lattitude": -6939.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "b22f",
+      "dms_longitude": "174 24'W",
+      "dms_lattitude": "67 47'S",
+      "longitude": -17424.0,
+      "lattitude": -6747.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "b22h",
+      "dms_longitude": "163 45'E",
+      "dms_lattitude": "70 11'S",
+      "longitude": 16345.0,
+      "lattitude": -7011.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "b29",
+      "dms_longitude": "110 52'W",
+      "dms_lattitude": "73 46'S",
+      "longitude": -11052.0,
+      "lattitude": -7346.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "b51",
+      "dms_longitude": "131 40'W",
+      "dms_lattitude": "74 11'S",
+      "longitude": -13140.0,
+      "lattitude": -7411.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "c15",
+      "dms_longitude": "143 4'E",
+      "dms_lattitude": "65 50'S",
+      "longitude": 1434.0,
+      "lattitude": -6550.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "c18b",
+      "dms_longitude": "47 22'E",
+      "dms_lattitude": "67 0'S",
+      "longitude": 4722.0,
+      "lattitude": -670.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "c18c",
+      "dms_longitude": "39 3'E",
+      "dms_lattitude": "68 29'S",
+      "longitude": 393.0,
+      "lattitude": -6829.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "c21b",
+      "dms_longitude": "95 53'E",
+      "dms_lattitude": "64 58'S",
+      "longitude": 9553.0,
+      "lattitude": -6458.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "c24",
+      "dms_longitude": "96 1'E",
+      "dms_lattitude": "64 50'S",
+      "longitude": 961.0,
+      "lattitude": -6450.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "c30",
+      "dms_longitude": "96 16'E",
+      "dms_lattitude": "64 46'S",
+      "longitude": 9616.0,
+      "lattitude": -6446.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "c31",
+      "dms_longitude": "96 30'E",
+      "dms_lattitude": "64 43'S",
+      "longitude": 9630.0,
+      "lattitude": -6443.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "c33",
+      "dms_longitude": "101 14'E",
+      "dms_lattitude": "65 12'S",
+      "longitude": 10114.0,
+      "lattitude": -6512.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "c35",
+      "dms_longitude": "142 55'E",
+      "dms_lattitude": "66 14'S",
+      "longitude": 14255.0,
+      "lattitude": -6614.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "c36",
+      "dms_longitude": "146 34'E",
+      "dms_lattitude": "67 27'S",
+      "longitude": 14634.0,
+      "lattitude": -6727.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "c39",
+      "dms_longitude": "56 10'E",
+      "dms_lattitude": "65 42'S",
+      "longitude": 5610.0,
+      "lattitude": -6542.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "d15a",
+      "dms_longitude": "81 47'E",
+      "dms_lattitude": "66 40'S",
+      "longitude": 8147.0,
+      "lattitude": -6640.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "d15b",
+      "dms_longitude": "81 28'E",
+      "dms_lattitude": "67 1'S",
+      "longitude": 8128.0,
+      "lattitude": -671.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "d15c",
+      "dms_longitude": "79 22'E",
+      "dms_lattitude": "67 15'S",
+      "longitude": 7922.0,
+      "lattitude": -6715.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "d15d",
+      "dms_longitude": "79 15'E",
+      "dms_lattitude": "67 19'S",
+      "longitude": 7915.0,
+      "lattitude": -6719.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "d23",
+      "dms_longitude": "74 37'E",
+      "dms_lattitude": "69 28'S",
+      "longitude": 7437.0,
+      "lattitude": -6928.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "d30b",
+      "dms_longitude": "45 41'W",
+      "dms_lattitude": "60 35'S",
+      "longitude": -4541.0,
+      "lattitude": -6035.0,
+      "recent_observation": "10/19/26"
+    },
+    {
+      "iceberg": "d32",
+      "dms_longitude": "39 15'W",
+      "dms_lattitude": "56 42'S",
+      "longitude": -3915.0,
+      "lattitude": -5642.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "d33a",
+      "dms_longitude": "55 24'W",
+      "dms_lattitude": "63 39'S",
+      "longitude": -5524.0,
+      "lattitude": -6339.0,
+      "recent_observation": "10/18/26"
+    },
+    {
+      "iceberg": "d33b",
+      "dms_longitude": "43 13'W",
+      "dms_lattitude": "58 38'S",
+      "longitude": -4313.0,
+      "lattitude": -5838.0,
+      "recent_observation": "09/25/26"
+    },
+    {
+      "iceberg": "d33c",
+      "dms_longitude": "58 19'W",
+      "dms_lattitude": "69 44'S",
+      "longitude": -5819.0,
+      "lattitude": -6944.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "d33d",
+      "dms_longitude": "55 22'W",
+      "dms_lattitude": "63 40'S",
+      "longitude": -5522.0,
+      "lattitude": -6340.0,
+      "recent_observation": "10/18/26"
+    },
+    {
+      "iceberg": "d34",
+      "dms_longitude": "81 55'E",
+      "dms_lattitude": "67 6'S",
+      "longitude": 8155.0,
+      "lattitude": -676.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "d35",
+      "dms_longitude": "44 4'W",
+      "dms_lattitude": "60 11'S",
+      "longitude": -444.0,
+      "lattitude": -6011.0,
+      "recent_observation": "10/19/26"
+    },
+    {
+      "iceberg": "d36",
+      "dms_longitude": "86 46'E",
+      "dms_lattitude": "66 16'S",
+      "longitude": 8646.0,
+      "lattitude": -6616.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "d37",
+      "dms_longitude": "36 20'E",
+      "dms_lattitude": "69 12'S",
+      "longitude": 3620.0,
+      "lattitude": -6912.0,
+      "recent_observation": "10/20/26"
+    },
+    {
+      "iceberg": "uk324",
+      "dms_longitude": "148 48'E",
+      "dms_lattitude": "66 57'S",
+      "longitude": 14848.0,
+      "lattitude": -6657.0,
+      "recent_observation": "10/20/26"
+    }
   ]
 }
