@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-11-12 14:14:17 UTC",
-  "total_observation_dates": 71,
-  "total_records": 3209,
+  "generated_at": "2026-11-14 12:42:20 UTC",
+  "total_observation_dates": 72,
+  "total_records": 3248,
   "unique_icebergs": 111,
   "date_range": {
     "earliest": "01/20/20",
-    "latest": "11/06/26"
+    "latest": "11/13/26"
   },
   "sample_icebergs": [
-    "d27",
-    "a69a",
-    "a76c",
     "a76g",
-    "a76k",
-    "a85",
-    "b22a",
-    "d15d",
-    "a68n",
-    "d36"
+    "d30b",
+    "a68d",
+    "a73",
+    "uk324",
+    "a68e",
+    "d32",
+    "a68h",
+    "d33b",
+    "a68g"
   ]
 }
